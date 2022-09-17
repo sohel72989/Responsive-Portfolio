@@ -451,6 +451,9 @@ h1 a i{
     .col-4{
         width: 100%;
     }
+    .banner-content a{
+        line-height: 4;
+    }
     .experience-content{
         margin: 0;
     }
