@@ -463,8 +463,8 @@ h1 a i{
     .main-blog .d-flex{
         display: flex;
     }
-    .main-blog h4 span{
-        font-size: 10px;
+    .main-blog h4{
+        font-size: 16px;
     }
   }
 /* media query  responsive css end*/
