@@ -451,10 +451,16 @@ h1 a i{
     .col-4{
         width: 100%;
     }
+    .experience-content{
+        margin: 0;
+    }
     .work-inner p{
         margin: 0;
     }
     .about-section .about-content .d-flex{
+        display: flex;
+    }
+    .main-blog .d-flex{
         display: flex;
     }
   }
