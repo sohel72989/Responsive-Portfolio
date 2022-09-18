@@ -528,7 +528,7 @@ form{
 
 /* media query  responsive css start*/
 
-@media (min-width:400px) and (max-width: 768px) { 
+@media screen and (min-width:400px) and (max-width: 768px) { 
     .d-flex{
         display: block;
     }
