@@ -42,13 +42,13 @@
       <div class="container">
         <div class="banner-content">
           <h4>My Name Is</h4>
-          <h2>John Watson</h2>
+          <h2>Sohel Rana</h2>
           <h4>Web Designer And Developer</h4>
           <p>
             Nulla viverra pharetra sem, eget pulvinar neque pharetra ac int.
-            lorem ipsum Vestibulum. <br />
+            lorem ipsum Vestibulum.
             placerat placerat dolor. Vestibulum at dui nunc. Nullam eu elit
-            neque lectus. Aliquam erat <br />
+            neque lectus. Aliquam erat
             volutpat. Nullam ac mattis mi. Donec tincidunt leoelit dictum
             viverra luctus.
           </p>
@@ -80,10 +80,10 @@
             </p>
             <a href="#">Download CV <i class="fa-solid fa-download"></i></a>
           </div>
-          <div class="col-4">
+          <div class="col-4 about-flex">
             <img src="./assets/img/about.jpg" alt="blogImage" />
           </div>
-          <div class="col-4">
+          <div class="col-4 about-flex">
             <div class="d-flex justify-between">
               <h6>Designing & Developing</h6>
               <h6><span>95%</span></h6>
@@ -344,20 +344,19 @@
         <div class="about-inner">
           <h3>Contact</h3>
           <div class="divider"></div>
-          <h3>Under Construction....</h3>
         </div>
-        <div class="row d-flex justify-between">
-          <div class="col-6">
+        <div class="row d-flex contact-inner">
+          <div class="col-5">
             <h4>Address Info</h4>
-            <div class="address d-flex align-items">
+            <div class="address d-flex">
               <p><i class="fa-solid fa-location-dot"></i></p>
               <address>24H Main Block, 4th cross, California,California - 94203</address>
             </div>
-            <div class="cell-number d-flex align-items">
+            <div class="cell-number d-flex">
               <p><i class="fa-solid fa-phone"></i></p>
               <p>+112 367 896 2449</p>
             </div>
-            <div class="mail d-flex align-items">
+            <div class="mail d-flex">
               <p><i class="fa-solid fa-envelope"></i></p>
               <p><a href="#">mail@example.com</a></p>
             </div>
@@ -365,24 +364,35 @@
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387142.84010033106!2d-74.25819252532891!3d40.70583163828471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sin!4v1475140387172" width="100%" height="250" style="border: 2px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
-          <div class="col-6">
+          <div class="col-7 form-inner">
             <h4>Get In Touch</h4>
             <form action="#">
-              <div class="name">
-                <label for="name"><span><i class="fa-solid fa-user"></i></span> Name</label>
-                <input type="text" id="name" placeholder="Name" />
+              <div class="name d-flex justify-between">
+                <div class="form-content">
+                  <label for="name"><span><i class="fa-solid fa-user"></i></span> Name</label>
+                </div>
+                <input type="text" id="name" placeholder="Name" size="100px"/>
               </div>
-              <div class="email">
-                <label for="email"><span><i class="fa-solid fa-envelope"></i></span> Email</label>
-                <input type="email" placeholder="Email" id="email" />
+              <div class="email d-flex justify-between">
+                <div class="form-content">
+                  <label for="email"><span><i class="fa-solid fa-envelope"></i></span> Email</label>
+                </div>
+                <input type="email" placeholder="Email" id="email" size="100px" />
               </div>
-              <div class="phone">
-                <label for="phone"><span><i class="fa-solid fa-phone"></i></span> Phone</label>
-                <input type="number" placeholder="Number" id="phone" />
+              <div class="phone d-flex justify-between">
+                <div class="form-content">
+                  <label for="phone"><span><i class="fa-solid fa-phone"></i></span> Phone</label>
+                </div>
+                <input type="number" placeholder="Number" id="phone" size="100px"/>
               </div>
-              <div class="textarea">
-                <label for="msg"><span><i class="fa-regular fa-pen-to-square"></i></span> Massage</label>
-                <textarea name="massage" id="msg" cols="30" rows="10" placeholder="Massage"></textarea>
+              <div class="textarea d-flex justify-between">
+                <div  class="form-content">
+                  <label for="msg"><span><i class="fa-regular fa-pen-to-square"></i></span> Massage</label>
+                </div>
+                <textarea name="massage" id="msg" cols="30" rows="5" placeholder="Massage" size="100px"></textarea>
+              </div>
+              <div class="form-button">
+                <a href="#">Submit</a>
               </div>
             </form>
           </div>

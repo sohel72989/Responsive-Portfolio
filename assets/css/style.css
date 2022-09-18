@@ -57,8 +57,9 @@ a{
 /* common code of css  */
 /* header section started  */
 .header-section{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/banner.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/sohelrana-removebg-preview.png);
     background-size: cover;
+    background-position:top;
     padding: 30px 15px;
 }
 nav ul li{
@@ -87,8 +88,8 @@ h1 a i{
 }
 /* banner content section start  */
 .banner-content{
-    padding-top: 150px;
-    width: 70%;
+    padding: 150px 0px;
+    max-width: 750px;
 }
 .banner-content h4{
     font-size: 20px;
@@ -154,9 +155,11 @@ h1 a i{
 }
 .col-4{
     width: 33.33%;
-    padding: 16px 15px;
 }
 /* .col-3{width: 25%;} */
+.about-flex{
+    padding-left: 25px;
+}
 .about-content h4{
     color: #333;
     font-size: 22px;
@@ -234,7 +237,7 @@ h1 a i{
 .service-inner p{
     font-size: 16px;
     color: #eee!important;
-    margin: 16px 0px;
+    margin: 16px 5px;
     line-height: 30px;
     letter-spacing: .5px;
 }
@@ -307,10 +310,11 @@ h1 a i{
 .main-blog{
     background-color: #FFFFFF;
     padding: 32px 20px 32px 32px;
+    margin: 0px 10px;
 }
 .main-blog h4{
     color: #333;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     margin-bottom: 15px;
     letter-spacing: 1px;
@@ -393,7 +397,86 @@ h1 a i{
 }
 /* work/hire section css end */
 /* contact section css start  */
+.contact-inner{
+    padding: 15px;
+}
+.contact-inner h4{
+    color: #333;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+.contact-inner  p{
+    color: #666;
+    font-size: 16px;
+    padding: 0px 25px 20px 0px;
+}
+.contact-inner  p a{
+    color: #666;
+}
+.contact-inner p i{
+    padding: 0px 25px 20px 0px;
+    color: #2ec39e;
+}
+.contact-inner .map{
+    border: 4px solid #eee;
+    margin-top: 15px;
+}
+/* _________________ */
+form{
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+.form-inner{
+    margin-left: 50px;
+}
+.form-inner span{
+    color:#2ec39e;
+    padding-right: 5px;
+}
+.form-inner input{
+    margin: 10px 0px;
+    padding: 15px;
+    width: 75%;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 
+}
+.form-content{
+    margin: 10px 0px;
+}
+.col-7{
+    width: 65%;
+}
+.textarea textarea{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0px;
+    width: 75%;
+    outline: none;
+}
+.form-button{
+    text-align: right;
+}
+.form-button a{
+    border: 2px solid #0a8ea0;
+    padding: 11px 35px;
+    display: inline-block;
+    background-color: #0a8ea0;
+    color: #FFFFFF;
+    margin-top: 5px;
+    border-radius: 4px;
+    transition: .3s;
+}
+.form-button a:hover{
+    border: 2px solid #333;
+    color: #333;
+    background-color: #FFFFFF;
+}
 
 /* contact section css end */
 
@@ -444,18 +527,27 @@ h1 a i{
 /* footer section css end */
 
 /* media query  responsive css start*/
-@media only screen and (max-width: 768px) { 
+
+@media (min-width:400px) and (max-width: 768px) { 
     .d-flex{
         display: block;
+    }
+    .banner-content h2{
+        font-size: 45px;
+    }
+    .banner-content p{
+        line-height: 1.3;
+        letter-spacing: 0.5px;
     }
     .col-4{
         width: 100%;
     }
     .banner-content a{
+        padding: 6px 18px;
         line-height: 4;
     }
     .experience-content{
-        margin: 0;
+        margin: 20px 0px;
     }
     .work-inner p{
         margin: 0;
@@ -463,11 +555,37 @@ h1 a i{
     .about-section .about-content .d-flex{
         display: flex;
     }
+    .about-flex{
+        margin-top: 15px;
+        padding-left: 0;
+    }
     .main-blog .d-flex{
         display: flex;
     }
+    .main-blog{
+        margin-top: 15px;
+    }
     .main-blog h4{
-        font-size: 16px;
+        font-size: 14px;
+    }
+    .address, .cell-number, .mail{
+        display: flex;
+    }
+    .form-inner{
+        margin-top: 40px;
+        margin-left: 5px;
+    }
+    .form-inner input{
+        width: 100%;
+    }
+    .textarea textarea{
+        width: 100%;
+    }
+    .form-button{
+        text-align:left;
+    }
+    .col-7{
+        width: 100%;
     }
   }
 /* media query  responsive css end*/
